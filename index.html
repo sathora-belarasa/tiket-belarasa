@@ -1,11 +1,41 @@
 <head>  
+  <style>
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
   <body>
     <h1>Hello World!</h1>  
-    <table border="1px solid black">
+    <table id="customers">
+      <tr>
+        <td>Lukas-1</td>
+        <td>John Doe</td>
+        <td><img src="https://chart.googleapis.com/chart?chs=600x600&cht=qr&chl=https://belarasa.id/petugas/misa/scanQRCode?misa_id=2233&qr_code=BLRS-DIO3563596245-22.png"/></td>
+      </tr>
       <tr>
         <td>Lukas-2</td>
-        <td><font size="32">John Doe</font></td>
-        <td><img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://belarasa.id/petugas/misa/scanQRCode?misa_id=2233&qr_code=BLRS-DIO3563596245-22.png"/></td>
+        <td>Jane Doe</td>
+        <td><img src="https://chart.googleapis.com/chart?chs=600x600&cht=qr&chl=https://belarasa.id/petugas/misa/scanQRCode?misa_id=2233&qr_code=BLRS-DIO3563596245-22.png"/></td>
       </tr>
     </table>
   </body>
