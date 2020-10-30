@@ -1,22 +1,68 @@
 <head>  
   <style>
-    #customers {
+    /* Style The Dropdown Button */
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+    .customers {
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
       font-size: 32px;
       border-collapse: collapse;
       width: 100%;
     }
 
-    #customers td, #customers th {
+    .customers td, #customers th {
       border: 1px solid #ddd;
       padding: 8px;
     }
 
-    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    .customers tr:nth-child(even){background-color: #f2f2f2;}
 
-    #customers tr:hover {background-color: #ddd;}
+    .customers tr:hover {background-color: #ddd;}
 
-    #customers th {
+    .customers th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
@@ -25,8 +71,40 @@
     }
   </style>
   <body>
-    <h1>Hello World!</h1>  
-    <table id="customers">
+    <h1>Hari Raya Semua Orang Kudus 1-Nov-2020 pk 8:30</h1>  
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#biara">Biara</a>
+        <a href="#petugas">Petugas</a>
+        <a href="#antonius">Wil. Antonius</a>
+        <a href="#benediktus">Wil. Benediktus</a>
+        <a href="#ignatius">Wil. Ignatius</a>
+        <a href="#klara">Wil. Klara</a>
+        <a href="#theresia">Wil. Theresia</a>
+        <a href="#timotius">Wil. Timotius</a>
+        <a href="#tamu">Tamu</a>
+      </div>
+    </div>
+    <table id="petugas" class="customers">
+      <tr><td>P-AV<br><br> Sam Ali</td><td><img src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https%3A%2F%2Fbelarasa.id%2Fpetugas%2Fmisa%2FscanQRCode%3Fmisa_id%3D2233%26qr_code%3DBLRS-DIO3650854490-36.png"/></td></tr>
+      <tr><td>P-AV<br><br> Soegianto</td><td><img src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https%3A%2F%2Fbelarasa.id%2Fpetugas%2Fmisa%2FscanQRCode%3Fmisa_id%3D2233%26qr_code%3DBLRS-DIO3650854490-36.png"/></td></tr>
+      <tr><td>P-Tatib<br>Ignatius-3<br>PATRICIA DEL OLIVA HENI YULIANI WIJAYA</td></tr>
+      <tr><td>P-Tatib<br>Ignatius-3<br>SINSIUS ANTONIOS ANDOKO TJAHJONO</td></tr>
+      <tr><td>P-Tatib<br>Timotius-1<br>STEPHANUS PERRY SUTEDJO</td></tr>
+      <tr><td>P-Tatib<br>Klara-1<br>ANTONIUS KASIM HASAN</td></tr>
+      <tr><td>P-Tatib<br>Klara-1<br>BERNARDUS IWAN HARYANTO HASAN</td></tr>
+      <tr><td>P-Tatib<br>Klara-5<br>LEONARDUS HERIYANTO PUTRA</td></tr>
+      <tr><td>P-Tatib<br>Klara-6<br>BLANSIUS HANNY BAJANG</td></tr>
+      <tr><td>P-Tatib<br>Antonius-1<br>EMANUEL WARDI TIRTA SUNJAYA</td></tr>
+      <tr><td>P-Tatib<br>Antonius-1<br>YOHANES YOHANES ADI NOVI IRIANTO</td></tr>
+      <tr><td>P-Tatib<br>Benediktus-4<br>ALBERTUS DRIYARKORO TAMTOMO</td></tr>
+      <tr><td>Prodiakon<br>Ignatius-5<br>ANTONIUS BRIAN HANDOKO</td></tr>
+      <tr><td>Prodiakon<br>Timotius-2<br>NICHOLAS MARGONO SURYADINATA K.</td></tr>
+      <tr><td>Prodiakon<br>Timotius-5<br>FLORENTINA YUNITA LESTARI SUTANTIO</td></tr>
+      <tr><td>Prodiakon<br>Antonius-4<br>GREGORIUS CHRISTIAN CHANDRA</td></tr>
+    </table>
+    <table id="antonius" class="customers">
       <tr><td>P-AV<br><br> Sam Ali</td><td><img src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https%3A%2F%2Fbelarasa.id%2Fpetugas%2Fmisa%2FscanQRCode%3Fmisa_id%3D2233%26qr_code%3DBLRS-DIO3650854490-36.png"/></td></tr>
       <tr><td>P-AV<br><br> Soegianto</td><td><img src="https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=https%3A%2F%2Fbelarasa.id%2Fpetugas%2Fmisa%2FscanQRCode%3Fmisa_id%3D2233%26qr_code%3DBLRS-DIO3650854490-36.png"/></td></tr>
       <tr><td>P-Tatib<br>Ignatius-3<br>PATRICIA DEL OLIVA HENI YULIANI WIJAYA</td></tr>
